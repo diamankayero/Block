@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import preact from "@astrojs/preact";
 import sitemap from "@astrojs/sitemap";
 import swup from "@swup/astro";
-
+import github from "@astrojs/github";
 import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
@@ -18,11 +18,10 @@ export default defineConfig({
     preact(),
     sitemap(),
   ],
-
+  adapter: github(),
   image: {
     responsiveStyles: true,
   },
-
   vite: {
     plugins: [tailwindcss()],
   },
