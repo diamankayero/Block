@@ -7,8 +7,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://djsiddz.github.io",
-  base: "/samay-anand",
+  site: "https://diamankayero.github.io",
+  base: "/Block",
   integrations: [
     swup({
       theme: "fade",
